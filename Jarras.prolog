@@ -1,21 +1,3 @@
-contenido([8, 0, 0]).
-contenido([5, 0, 3]).
-contenido([3, 5, 0]).
-contenido([0, 5, 3]).
-contenido([3, 5, 0]).
-contenido([3, 2, 3]).
-contenido([6, 2, 0]).
-contenido([6, 0, 2]).
-contenido([1, 5, 2]).
-contenido([1, 4, 3]).
-contenido([4, 4, 0]).
-contenido([5, 3, 0]).
-contenido([2, 3, 3]).
-contenido([2, 5, 1]).
-contenido([7, 0, 1]).
-contenido([7, 1, 0]).
-contenido([4, 1, 3]).
-
 accion([A, B, C], [0, B2, C]):- RESTO is (5 - B), A =< RESTO, B2 is B + A, B2 =< 5, B2 \== B.
 accion([A, B, C], [A2, 5, C]):- RESTO is (5 - B), A > RESTO, A2 is A - RESTO, A2 =< 8, A2 \== A.
 
